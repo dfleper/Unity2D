@@ -1,7 +1,7 @@
-# Unity 🕹🎮
+# Unity2D 🕹🎮
 
-![GitHub repo size](https://img.shields.io/github/repo-size/dfleper/Unity?logo=github)
-![GitHub last commit](https://img.shields.io/github/last-commit/dfleper/Unity?color=blue&label=last-commit&logo=github&logoColor=white)
+![GitHub repo size](https://img.shields.io/github/repo-size/dfleper/Unity2D?logo=github)
+![GitHub last commit](https://img.shields.io/github/last-commit/dfleper/Unity2D?color=blue&label=last-commit&logo=github&logoColor=white)
 
 #### First application in Unity. Testing of Sprites, Movements, Animations, Collisions, Particle System, Materials, Prefabs, Audio, etc...
 - The app is a mini-game that will familiarise you with sprites, sprite movements, sprite collisions, sprite animations, particle systems and audio.
