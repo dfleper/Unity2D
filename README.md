@@ -10,9 +10,11 @@
 - La app es un mini juego con el que nos familiarizaremos con sprites, movimientos de sprites, colisiones de sprites, animaciones de sprites, sistemas de partículas y audio.
 
 https://github.com/dfleper/Unity2D/assets/124105822/c0687698-021e-4569-96b4-a35ef6e3e674
-
+- ### 🔊 Activate the Sound 🔊 Active el Sonido 🔊
+  
 https://github.com/dfleper/Unity2D/assets/124105822/30920d95-ba92-4fdb-a4c6-06e9cff7e0f3
-
+- ### 🔊 Activate the Sound 🔊 Active el Sonido 🔊
+  
 #### 🛠 [Unity](https://unity.com/)
 #### 🛠 [Visual Studio Code](https://code.visualstudio.com/) 
 #### 📋 [Unity Docs](https://docs.unity3d.com/Manual/index.html) 
