@@ -11,7 +11,7 @@ function customize(html) {
   }
   html=html.replace('<html lang="en-us">','<html lang="es">');
   html=html.replace(/<title>[^<]*<\/title>/, '<title>Vikingo 2D | Demo jugable</title>');
-  replaceOne('<link rel="stylesheet" href="TemplateData/style.css">', '<link rel="stylesheet" href="TemplateData/style.css">\n    <link rel="stylesheet" href="demo.css">\n    <script src="demo.js" defer></script>', 'CSS');
+  replaceOne('<link rel="stylesheet" href="TemplateData/style.css">', '<link rel="stylesheet" href="TemplateData/style.css">\n    <link rel="stylesheet" href="demo.css">\n    <script src="demo.js?v=webgl-restart-2" defer></script>', 'CSS');
   replaceOne('  <body>', `  <body>
     <div class="demo-page" id="demo-page">
       <header class="demo-header">
