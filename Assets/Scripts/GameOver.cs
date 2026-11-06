@@ -1,39 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
     private int huevosColision = 0;
     public GameObject gameOverPanel;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-
+        // Update runs with Time.timeScale == 0, so R works after game over.
+        if (gameOverPanel != null && gameOverPanel.activeSelf && Input.GetKeyDown(KeyCode.R))
+            ReiniciarPartida();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Huevo"))
         {
             huevosColision++;
             if (huevosColision >= 6)
-            {
                 MostrarGameOver();
-            }
         }
     }
 
-    void MostrarGameOver()
+    private void MostrarGameOver()
     {
-        gameOverPanel.SetActive(true);
-        Time.timeScale = 0;
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    // Public method invoked by the WebGL HTML button (SendMessage).
+    public void ReiniciarPartida()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

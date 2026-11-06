@@ -8,6 +8,7 @@ on:
       - 'Assets/**'
       - 'Packages/**'
       - 'ProjectSettings/**'
+      - 'web/**'
       - '.github/workflows/webgl.yml'
 
 permissions:
@@ -60,6 +61,10 @@ jobs:
           rm -rf site
           mkdir -p site
           cp -a build/WebGL/WebGL/. site/
+          node web/customize-webgl.cjs site/index.html
+          test -s site/demo.css
+          test -s site/demo.js
+          grep -q 'id="demo-restart"' site/index.html
 
       - name: Publicar WebGL en deploy
         run: |
