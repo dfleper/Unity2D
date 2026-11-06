@@ -15,7 +15,21 @@ jobs:
         uses: actions/checkout@v4
         with:
           lfs: true
+          
+      - name: Liberar espacio para Unity
+        uses: jlumbroso/free-disk-space@v2
+        with:
+          android: true
+          dotnet: false
+          haskell: true
+          large-packages: false
+          docker-images: true
+          preinstalled-runtimes: false
+          swap-storage: false
 
+      - name: Comprobar espacio disponible
+        run: df -h
+        
       - name: Compilar Unity WebGL
         uses: game-ci/unity-builder@v4
         env:
