@@ -2,6 +2,7 @@
 
 ### 🕹🎮 [Game Demo](https://unity2d-production.up.railway.app/)
 ----
+![Status](https://img.shields.io/badge/status-archived-inactive)
 ![GitHub repo size](https://img.shields.io/github/repo-size/dfleper/Unity2D?logo=github)
 ![GitHub last commit](https://img.shields.io/github/last-commit/dfleper/Unity2D?color=blue&label=last-commit&logo=github&logoColor=white)
 
