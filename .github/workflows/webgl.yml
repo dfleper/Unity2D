@@ -55,11 +55,11 @@ jobs:
 
       - name: Preparar carpeta site
         run: |
-          test -f build/WebGL/index.html
-          test -d build/WebGL/Build
+          test -f build/WebGL/WebGL/index.html
+          test -d build/WebGL/WebGL/Build
           rm -rf site
           mkdir -p site
-          cp -a build/WebGL/. site/
+          cp -a build/WebGL/WebGL/. site/
 
       - name: Publicar WebGL en deploy
         run: |
